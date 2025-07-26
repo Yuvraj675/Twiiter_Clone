@@ -22,7 +22,7 @@
 <body class="bg-black text-white h-full">
     <div class="container m-auto  flex items-start mb-0 xl:px-14 ">
         
-        <div class="part-1 m-0 border-r w-fit shrink h-screen border-slate-700 pt-4 px-8 text-2xl sticky top-0 z-10">
+        <div class="part-1 hidden md:block m-0 border-r w-fit shrink h-screen border-slate-700 pt-4 px-8 text-2xl sticky top-0 z-10">
             <a href="/"
                 class="flex items-center w-fit cursor-pointer rounded-full hover:bg-neutral-800 py-3 m-auto transition-colors duration-200 ">
                 <div dir="ltr" class="size-8 invert"><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -426,6 +426,10 @@
     })
     $(document).ready(function () {
         post_create(content);
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            post_create(content);
+            post_create(content);
+        }
         $('.post').on('click', function () {
             console.log('clicked');
             const url = $('.post.anime').attr('src');
