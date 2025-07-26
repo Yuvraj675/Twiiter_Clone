@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Input Css Files
+css/input.css
+
+# JSON files
+*.json
+
+#Config Files
+*.config.js
+
