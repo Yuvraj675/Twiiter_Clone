@@ -4,7 +4,7 @@ A Twitter (now X) clone built with **Tailwind CSS** featuring infinite scrolling
 
 ## Demo
 
-Hosted on Github Pages. [Click to open](https://yuvraj675.github.io/Twiiter_Clone/)
+Hosted on Github Pages. [Click to open](https://yuvraj675.github.io/Twiiter_Clone/){:target="_blank"}
 
 ## Features
 
