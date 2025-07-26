@@ -422,6 +422,10 @@
             $(this).remove()
         })
         post_create(content);
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            post_create(content);
+            post_create(content);
+        }
         $('.show-more').hide();
     })
     $(document).ready(function () {
