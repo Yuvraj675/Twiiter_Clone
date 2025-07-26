@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-black text-white h-full">
+    <div class="container m-auto  flex items-start mb-0 xl:px-14 ">
+        
+        <div class="part-1 m-0 border-r w-fit shrink h-screen border-slate-700 pt-4 px-8 text-2xl sticky top-0 z-10">
+            <a href="/"
+                class="flex items-center w-fit cursor-pointer rounded-full hover:bg-neutral-800 py-3 m-auto transition-colors duration-200 ">
+                <div dir="ltr" class="size-8 invert"><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg><span
+                        class="css-1jxf684 r-dnmrzs r-1udh08x r-3s2u2q r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1inkyih r-rjixqe"
+                        style="text-overflow: unset;"></span>
+                </div>
+            </a>
+            <ul class="flex flex-col justify-around my-4 mx-auto w-fit text-xl ">
+                <li><button
+                        class="flex gap-4 items-center rounded-full w-fit hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-solid fa-house"></i><span class="hidden xl:block">
+                            Home
+                        </span></li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-solid fa-magnifying-glass"></i><span class="hidden xl:block">
+                            Explore
+                        </span> </li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-regular fa-bell"></i><span class="hidden xl:block">
+                            Notifications
+                        </span> </li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-regular fa-envelope"></i><span class="hidden xl:block">
+                            Messages
+                        </span></li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-solid fa-square-poll-horizontal"></i><span class="hidden xl:block">
+                            Lists
+                        </span> </li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-regular fa-bookmark"></i><span class="hidden xl:block">
+                            Bookmarks
+                        </span> </li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-solid fa-suitcase"></i><span class="hidden xl:block">
+                            Jobs
+                        </span> </li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-solid fa-person"></i><span class="hidden xl:block">
+                            Communities
+                        </span> </li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-regular fa-user"></i><span class="hidden xl:block">
+                            Profile
+                        </span> </li></button>
+                <li><button
+                        class="flex gap-4 items-center rounded-full hover:bg-neutral-800 px-4 py-4  transition-colors duration-200"><i
+                            class="fa-solid fa-ellipsis"></i><span class="hidden xl:block">
+                            More
+                        </span> </li></button>
+
+            </ul>
+            <div class="flex flex-col items-center justify-between">
+                <button class="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center text-sm xl:w-56 xl:h-12 xl:text-xl "><b
+                        class="hidden xl:block">Post</b><span class="material-symbols-outlined block xl:!hidden">
+                        add
+                    </span></button>
+                <div
+                    class="profile  transition-colors duration-150 hover:bg-neutral-900 xl:px-4 py-2 rounded-full place-items-center place-content-center flex gap-8 my-6 absolute bottom-0 w-[15vw]">
+                    <div class="photo  col-span-10 rounded-full size-10"><img class='rounded-full' src="pp.png"
+                            alt="Profile Photo"></div>
+                    <div class="details hidden xl:block col-span-7">
+                        <div class="name text-sm lg:text-base">Yuvraj Gupta</div>
+                        <div class="handle text-xs lg:text-sm text-gray-400">@Yuvi675</div>
+                    </div>
+                    <div class="more hidden xl:block  col-span-1"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="part-2 m-0 relative w-full grow border-r  border-slate-700 " id="top">
+            <div class="tab sticky top-0 border-b border-slate-700 z-10 backdrop-blur-xl backdrop-brightness-50">
+                <div class="items flex justify-around items-center  ">
+                    <button class="you pb-4 transition-colors duration-200 hover:bg-neutral-800 w-full pt-4">For
+                        You</button>
+                    <button
+                        class="following transition-colors duration-200 hover:bg-neutral-800 w-full pt-4 text-gray-500 pb-4">Following</button>
+                </div>
+                <div class="selector grid grid-cols-12 w-full h-1   absolute bottom-[0.1rem]">
+                    <div
+                        class="selected transition-all duration-150 col-start-3 col-end-5 bg-blue-500 rounded-full w-full h-1">
+                    </div>
+                </div>
+                <div
+                    class="absolute left-[50%] translate-x-[-50%] scroll hidden opacity-0 transition-all duration-1000">
+                    <button
+                        class="scroll-top flex text-sm items-center justify-center bg-blue-500 rounded-full p-6 w-fit animate-bounce m-auto mt-6 size-6 hover:opacity-80 transition-opacity duration-200">
+                        <b>Scroll To Top</b>
+                        <span class="material-symbols-outlined ">
+                            arrow_upward
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="new-post border-b border-slate-700 p-4 relative">
+                <div class="flex items-center">
+                    <button type="button" class="pp w-16"><img
+                            class="rounded-full transition-opacity duration-200 hover:opacity-80 size-10" src="pp.png"
+                            alt="Profile Photo"></button type="button">
+                    <div class="w-full posting text-xl text-gray-500"><input type="text"
+                            class="bg-black w-full appearance-none outline-none" placeholder="What is happening?!">
+                    </div>
+                </div>
+                <div class="button-container flex items-center justify-between pt-4 pb-2 text-xs">
+                    <div class="buttons flex items-center gap-4 text-blue-500 ml-[4rem]">
+                        <button
+                            class="transition-colors duration-150 hover:bg-slate-900 rounded-full size-8 flex items-center justify-center"><span
+                                class="material-symbols-outlined">image</span></button>
+                        <button
+                            class="transition-colors duration-150 hover:bg-slate-900 rounded-full size-8 flex items-center justify-center"><span
+                                class="material-symbols-outlined">gif_box</span></button>
+                        <button
+                            class="transition-colors duration-150 hover:bg-slate-900 rounded-full size-8 flex items-center justify-center"><span
+                                class="material-symbols-outlined">tune</span></button>
+                        <button
+                            class="transition-colors duration-150 hover:bg-slate-900 rounded-full size-8 flex items-center justify-center"><span
+                                class="material-symbols-outlined">mood</span></button>
+                        <button
+                            class="transition-colors duration-150 hover:bg-slate-900 rounded-full size-8 flex items-center justify-center"><span
+                                class="material-symbols-outlined">edit_calendar</span></button>
+                        <button
+                            class="transition-colors duration-150 hover:bg-slate-900 rounded-full size-8 flex items-center justify-center"><span
+                                class="material-symbols-outlined">location_on</span></button>
+                    </div>
+                    <button type="button" disabled
+                        class="bg-blue-500 rounded-full w-16 h-8 cursor-not-allowed opacity-75"><b>Post</b></button>
+                </div>
+            </div>
+            <button
+                class="show-more flex justify-center transition-colors duration-150 hover:bg-neutral-900 items-center text-blue-500 py-4 border-b border-slate-700 w-full mx-0">Show
+                more posts</button>
+
+            <div class="posts">
+            </div>
+            <div class="spinner flex items-center justify-center p-4 text-8xl text-blue-400 cursor-wait"><span
+                    class="material-symbols-outlined  animate-spin">progress_activity</span></div>
+        </div>
+        <div class="part-3 sticky top-0 text-white">
+            <div class=" z-10 pt-4  bg-black pb-2">
+                <div
+                    class="search-bar w-full flex items-center gap-5 px-4 ml-4 bg-gray-500 opacity-25 h-10 rounded-full text-white">
+                    <span class="material-symbols-outlined">search</span>
+                    <div>Search</div>
+                </div>
+            </div>
+            <div class="container w-full m-4 px-4 py-2 border border-slate-700 rounded-2xl">
+                <p class="text-xl pb-4"><b>Subscribe To Premium</b></p>
+                <p class="text-sm leading-tight">Subscribe to unlock new features and if eligible, receive a share of
+                    ads revenue.</p>
+                <button type="button"
+                    class="bg-blue-500 rounded-3xl text-xs w-fit px-4 h-8 mt-4 mb-2"><b>Subscribe</b></button>
+            </div>
+            <div class="sticky z-10 top-20">
+
+                <div class=" w-full m-4 border border-slate-700 rounded-2xl">
+                    <p class="text-xl px-4 py-2"><b>What's happening?</b></p>
+                    <div
+                        class="tags text-sm flex flex-col gap-0 transition-colors duration-200 cursor-pointer hover:bg-neutral-950 p-4">
+                        <div class="text-gray-500 flex justify-between items-center h-3">
+                            <div class="pb-2">Trending in India</div>
+                            <div
+                                class="transition-all duration-200 hover:bg-gray-700 rounded-full hover:text-blue-500 size-8 text-xs flex items-center justify-center">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+                        <div><b>#something</b></div>
+                        <div class="text-gray-500">232K posts</div>
+                    </div>
+                    <div
+                        class="tags text-sm flex flex-col gap-0 transition-colors duration-200 cursor-pointer hover:bg-neutral-950 p-4">
+                        <div class="text-gray-500 flex justify-between items-center h-3">
+                            <div class="pb-2">Trending in India</div>
+                            <div
+                                class="transition-all duration-200 hover:bg-gray-700 rounded-full hover:text-blue-500 size-8 text-xs flex items-center justify-center">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+                        <div><b>#something_part_2</b></div>
+                        <div class="text-gray-500">563K posts</div>
+                    </div>
+                    <div
+                        class="tags text-sm flex flex-col gap-0 transition-colors duration-200 cursor-pointer hover:bg-neutral-950 p-4">
+                        <div class="text-gray-500 flex justify-between items-center h-3">
+                            <div class="pb-2">Trending in India</div>
+                            <div
+                                class="transition-all duration-200 hover:bg-gray-700 rounded-full hover:text-blue-500 size-8 text-xs flex items-center justify-center">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+                        <div><b>#something_part_3</b></div>
+                        <div class="text-gray-500">641K posts</div>
+                    </div>
+                    <div
+                        class="tags text-sm flex flex-col gap-0 transition-colors duration-200 cursor-pointer hover:bg-neutral-950 p-4">
+                        <div class="text-gray-500 flex justify-between items-center h-3">
+                            <div class="pb-2">Trending in India</div>
+                            <div
+                                class="transition-all duration-200 hover:bg-gray-700 rounded-full hover:text-blue-500 size-8 text-xs flex items-center justify-center">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                        </div>
+                        <div><b>#something_part_4</b></div>
+                        <div class="text-gray-500">431K posts</div>
+                    </div>
+                    <div
+                        class="text-blue-400 p-4 rounded-b-2xl transition-colors duration-200 cursor-pointer hover:bg-neutral-950">
+                        Show more</div>
+                </div>
+                <div class="container w-full m-4 pt-2 border border-slate-700 rounded-2xl">
+                    <p class="text-xl px-4 pb-4"><b>Who To Follow</b></p>
+                    <div
+                        class="accounts flex items-center gap-2 transition-colors duration-200 cursor-pointer hover:bg-neutral-900 w-full pl-4">
+                        <div class="image rounded-full w-10"><img class="rounded-full" src="blank.avif" alt="profile">
+                        </div>
+                        <div class="flex gap-8 items-center">
+                            <div class="flex flex-col justify-between w-32">
+                                <p class="leading-tight hover:underline">Binod Sharma</p>
+                                <p class="text-gray-500 text-xs">@shbinod</p>
+                            </div>
+                            <button type="button"
+                                class="bg-white text-black rounded-3xl w-fit px-4 h-8 mt-4 mb-4 text-sm"><b>Follow</b></button>
+                        </div>
+                    </div>
+                    <div
+                        class="accounts flex items-center gap-2 transition-colors duration-200 cursor-pointer hover:bg-neutral-900 w-full pl-4">
+                        <div class="image rounded-full w-10"><img class="rounded-full" src="blank.avif" alt="profile">
+                        </div>
+                        <div class="flex gap-8 items-center">
+                            <div class="flex flex-col justify-between w-32">
+                                <p class="leading-tight hover:underline">Sample_2</p>
+                                <p class="text-gray-500 text-xs">@2sample</p>
+                            </div>
+                            <button type="button"
+                                class="bg-white text-black rounded-3xl w-fit px-4 h-8 mt-4 mb-4 text-sm"><b>Follow</b></button>
+                        </div>
+                    </div>
+                    <div
+                        class="accounts flex items-center gap-2 transition-colors duration-200 cursor-pointer hover:bg-neutral-900 w-full pl-4">
+                        <div class="image rounded-full w-10"><img class="rounded-full" src="blank.avif" alt="profile">
+                        </div>
+                        <div class="flex gap-8 items-center">
+                            <div class="flex flex-col justify-between w-32">
+                                <p class="leading-tight hover:underline">Sample_3</p>
+                                <p class="text-gray-500 text-xs">@3sample</p>
+                            </div>
+                            <button type="button"
+                                class="bg-white text-black rounded-3xl w-fit px-4 h-8 mt-4 mb-4 text-sm"><b>Follow</b></button>
+                        </div>
+                    </div>
+                    <div
+                        class="accounts flex items-center gap-2 transition-colors duration-200 cursor-pointer hover:bg-neutral-900 w-full pl-4">
+                        <div class="image rounded-full w-10"><img class="rounded-full" src="blank.avif" alt="profile">
+                        </div>
+                        <div class="flex gap-8 items-center justify-between">
+                            <div class="flex flex-col justify-between w-32">
+                                <p class="leading-tight hover:underline">Sample_4</p>
+                                <p class="text-gray-500 text-xs">@4sample</p>
+                            </div>
+                            <button type="button"
+                                class="bg-white text-black rounded-3xl w-fit px-4 h-8 mt-4 mb-4 text-sm"><b>Follow</b></button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="text-blue-400 p-4 rounded-b-2xl transition-colors duration-200 cursor-pointer hover:bg-neutral-950">
+                        Show more</div>
+
+
+                </div>
+                <div class="terms flex flex-col gap-2 px-8 text-xs">
+                    <div class="row flex items-center gap-1 text-gray-500">
+                        <p>Terms Of Service</p>
+                        <p>Privacy Policy</p>
+                        <p>Cookie Policy</p>
+                    </div>
+                    <div class="row flex items-center gap-1 text-gray-500">
+                        <p>Accessibility</p>
+                        <p>Ads Info</p>
+                        <p>More</p>
+                        <p>© 2024 Uv Corp.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function post_create(content) {
+        $.when($.ajax({
+            url: "https://api.waifu.pics/" + content,
+            method: 'GET'
+        }), $.ajax({
+            url: "https://uselessfacts.jsph.pl/api/v2/facts/random",
+            method: 'GET'
+        }), $.ajax({
+            url: "https://randomuser.me//api",
+            method: "GET"
+        })).done(function (resp1, resp2, resp3) {
+
+            let url = $.parseJSON(resp1["2"]["responseText"]).url;
+            let fact = $.parseJSON(resp2["2"]["responseText"]).text;
+            let user = $.parseJSON(resp3["2"]["responseText"]);
+            let info = user['results']["0"];
+            let name = info["name"]["first"] + " " + info["name"]["last"];
+            let id = info['login']['username']
+            let pic = info['picture']['large']
+            $(".posts").append(`<div class="post transition-colors duration-150 hover:bg-neutral-950 cursor-pointer p-4 pt-0 border-b border-slate-700">
+                <div class="post-content flex justify-between">
+                    <div class="left flex gap-4">
+                        <div class="pp w-12 shrink-0 pt-4"><img class="rounded-full" src=`+ pic + ` alt=` + pic + `>
+                        </div>
+                        <div class="text pt-4">
+                            <div class="header flex gap-1 items-center">
+                                <a class="hover:underline cursor-pointer"><b>`+ name + `</b></a>
+                                <img class="w-[1.25rem]" src="ver.png" alt="verified">
+                                <span class="text-gray-500">@`+ id + `</span>
+                                <span class="text-gray-500">·</span>
+                                <span class="text-gray-500">16h</span>
+                            </div>
+                            <div class="caption text-sm my-2"> <b>Random Fact: </b>` + fact + `
+                            </div>
+                            <img class="anime w-full rounded-3xl border-2 my-8 border-slate-700" src=`+ url + ` alt=` + url + `>
+                            <div class="interactions text-gray-500 flex justify-between items-center pb-4">
+                                <div class="flex items-center"><span
+                                        class="material-symbols-outlined">maps_ugc</span>98K</div>
+                                <div class="flex items-center"><span class="material-symbols-outlined">repeat</span>223K
+                                </div>
+                                <div class="flex items-center"><span
+                                        class="material-symbols-outlined">favorite</span>545K</div>
+                                <div class="flex items-center"><span
+                                        class="material-symbols-outlined">bar_chart</span>23M</div>
+                                <div class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined">bookmark</span>
+                                    <div><span class="material-symbols-outlined">iOS_share</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right mt-3 transition-all duration-200 hover:bg-gray-700 rounded-full hover:text-blue-500 size-8 text-xs flex items-center justify-center shrink-0 text-gray-500"><span class="material-symbols-outlined">more_horiz</span></div>
+                </div>
+            </div>`)
+
+        });
+    }
+
+
+    // let content = "nsfw/blowjob";
+    let content = "sfw/handhold";
+
+    $('.you').click(function () {
+        $('.selected').removeClass('col-start-9 col-end-11');
+        $('.selected').addClass('col-start-3 col-end-5');
+        $(this).removeClass('text-gray-500')
+        if ($(".following").hasClass('text-gray-500') === false) {
+            $(".following").addClass('text-gray-500');
+        }
+        content = "sfw/handhold";
+        $('.post').each(function () {
+            $(this).remove()
+        })
+        post_create(content);
+    })
+
+    $('.following').click(function () {
+
+        $('.selected').removeClass('col-start-3 col-end-5');
+        $('.selected').addClass('col-start-9 col-end-11');
+
+
+        $(this).removeClass('text-gray-500')
+        if ($(".you").hasClass('text-gray-500') === false) {
+            $(".you").addClass('text-gray-500');
+        }
+        content = "sfw/bonk";
+        $('.post').each(function () {
+            $(this).remove()
+        })
+        post_create(content);
+    })
+
+    $('.show-more').click(function () {
+        $('.post').each(function () {
+            $(this).remove()
+        })
+        post_create(content);
+        $('.show-more').hide();
+    })
+    $(document).ready(function () {
+        post_create(content);
+        $('.post').on('click', function () {
+            console.log('clicked');
+            const url = $('.post.anime').attr('src');
+            console.log(url);
+            window.open(url, '_blank');
+        })
+
+    })
+    $('.scroll-top').click(function () {
+        $("html, body").scrollTop(0);
+
+    });
+
+    $(window).scroll(function () {
+        if ($(document).scrollTop() === 0) {
+            $('.scroll').addClass("opacity-0");
+            // $('.scroll').addClass("hidden");
+            $('.scroll').hide();
+        };
+        if ($(document).scrollTop() >= $(window).height()) {
+            $('.scroll').removeClass("hidden");
+            $('.scroll').show();
+            $('.scroll').removeClass("opacity-0");
+        }
+        $(".spinner").each(function () {
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height()) {
+                post_create(content);
+            }
+        });
+    });
+
+
+</script>
+
+</html>
