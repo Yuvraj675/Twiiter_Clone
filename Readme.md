@@ -20,7 +20,7 @@ A Twitter (now X) clone built with **Tailwind CSS** featuring infinite scrolling
 
 - The app fetches tweets, user data, and media from three separate APIs.
 - Infinite scroll loads more content as you reach the bottom of the feed.
-- APIs used: Waifu API, Random User API and Useless Facts API.
+- APIs used: [Waifu API](https://www.waifu.im/), [Random User API](https://randomuser.me/) and [Useless Facts API](https://uselessfacts.jsph.pl/).
 
 ## Screenshots
 
