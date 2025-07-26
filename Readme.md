@@ -2,6 +2,10 @@
 
 A Twitter (now X) clone built with **Tailwind CSS** featuring infinite scrolling and dynamic content loading via three APIs.
 
+## Demo
+
+Hosted on Github Pages. [Click to open](https://yuvraj675.github.io/Twiiter_Clone/)
+
 ## Features
 
 - Modern UI styled with Tailwind CSS
@@ -25,5 +29,7 @@ A Twitter (now X) clone built with **Tailwind CSS** featuring infinite scrolling
 ## Screenshots
 
 ![Screenshot](screenshot.png)
+
+
 
 
